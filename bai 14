@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main(int argv, char* argc[])
+{
+	double a, b, c;
+	cout << "Nhap luong cua nhan vien " << endl;
+	cin >> a;
+	cout << "Luong cua nhan vien" << a << endl;
+
+	if (a >= 15000000) {
+		b = 0.3;	
+	}
+	else if (a >= 7000000) {
+		b = 0.2;
+	}
+	else {
+		b = 0.1;
+	}
+
+	c = a - a * b;
+	cout << "So tien thuc nhan cua nhan vien la" << c << endl;
+	
+	return 0;
+
+}
