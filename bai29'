@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i = 0;
+	
+	cout << "In ra day so chan khong vuot qua 100" << endl;
+
+	do
+	{
+		cout << i << endl;
+		i += 2;
+	} while (i <= 100);
+	return 0;
+}
