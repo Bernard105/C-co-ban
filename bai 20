@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main(int argv, char* argc[])
+{
+	int a, b, c, max;
+
+	cout << "Nhap a " << endl;
+	cin >> a;
+	cout << "Nhap b " << endl;
+	cin >> b;
+	cout << "Nhap c " << endl;
+	cin >> c;
+	
+	max = a > b ? (a > c ? a : c) : (b > c ? b : c);
+	cout << "Gia tri lon nhat cua 3 so   " << a << "\t" << b << "\t" << c << "   la  " << max << endl;
+
+	return 0;
+
+}
