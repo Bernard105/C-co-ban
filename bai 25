@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+int main(int argv, char* argc[])
+{
+	char str[250];
+	
+	cout << "Nhap du lieu : ";
+	cin.getline(str, 50);
+	cout << str << endl;
+
+	return 0;
+
+}
