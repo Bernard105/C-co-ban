@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	cout << "Nhap so nguyen" << endl;
+	cin >> x;
+
+	if (x == 100)
+	{
+		cout << x << " co gia tri bang " << endl;
+	}
+	else
+	{
+		if (x > 100)
+		{
+			cout << x << " co gia tri lon hon " << endl;
+		}
+		else
+		{
+			cout << x << " co gia tri nho hon " << endl;
+		}
+	}
+	return 0;
+}
