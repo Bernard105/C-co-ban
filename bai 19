@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main(int argv, char* argc[])
+{
+	double dkt, dgk, dck, a;
+	cout << "Nhap diem(diem kiem tra, diem thi giua ky, diem thi cuoi ky tuong ung la )" << "\n";
+	cin >> dkt >> dgk >> dck;
+
+	a = (dkt + dgk + dck) / 3;
+	
+	if (a >= 9.0) 
+	{
+		cout << "Hoc sinh dat hoc luc la A" << endl;
+	}
+	else if (a >= 7.0)
+	{
+		cout << "Hoc sinh dat hoc luc la B" << endl;
+	}
+	else if (a >= 5.0)
+	{
+		cout << "Hoc sinh dat hoc luc la C" << endl;
+	}
+	else
+	{
+		cout << "Hoc sinh dat hoc luc la F" << endl;
+	}
+	return 0;
+
+}
