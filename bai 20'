@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+
+int main()
+{
+    int a, b, c, max;
+    cout << "Nhap a" << endl;
+    cin >> a;
+    cout << "Nhap b" << endl;
+    cin >> b;
+    cout << "Nhap c" << endl;
+    cin >> c;
+
+    if (a > b) {
+        int max = a;
+        a = b;
+        b = max;
+        cout << "Gia tri lon nhat cua 3 so la " << max<< endl;
+    }
+    if (a > c) {
+        int max = a;
+        a = c;
+        c = max;
+        cout << "Gia tri lon nhat cua 3 so la " << max << endl;
+    }
+    if (b > c) {
+        int max = b;
+        b = c;
+        c = max;
+        cout << "Gia tri lon nhat cua 3 so la " << max << endl;
+    }
+    
+    return 0;
+
+}
