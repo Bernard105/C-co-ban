@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int NS, NHT, Tuoi;
+	NHT = 2022;
+
+	cout << "Nam sinh nguoi dung " << endl;
+	cin >> NS;
+	Tuoi = NHT - NS;
+	cout << "Tuoi nguoi dung la " << Tuoi << endl;
+
+	return 0;
+}
