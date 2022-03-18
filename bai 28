@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	double Diemkiemtra, Diemthigiuaky, Diemthicuoiky, Tongdiem;
+
+	cout << "Nhap diem kiem tra :";
+	cin >> Diemkiemtra;
+
+	cout << "Nhap diem thi giua ky :";
+	cin >> Diemthigiuaky;
+
+	cout << "Nhap diem thi cuoi ky :";
+	cin >> Diemthicuoiky;
+
+	Tongdiem = Diemkiemtra + Diemthigiuaky + Diemthicuoiky;
+	cout << "Tong diem :" << Tongdiem << endl;
+
+	return 0;
+
+}
