@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Nhap so can kiem tra " << endl;
+	cin >> n;
+
+	if (n > 0)
+	{
+		cout << n << " la so nguyen duong" << endl;
+	}
+	else
+	{
+		cout << n << " la so nguyen am" << endl;
+	}
+	return 0;
+}
