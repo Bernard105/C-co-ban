@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main(int argv, char* argc[])
+{
+	int a, b1, b2, b3, c;
+
+	cout << "Nhap tong thoi gian goi " << endl;
+	cin >> a;
+	cout << "Ban da goi " << a << " phut" << endl;
+	b1 = a * 600;
+	b2 = b1 + (a - 50) * 400;
+	b3 = b1 + b2 + (a - 200) * 200;
+	
+	if (a <= 50)
+	{
+		c = b1 + 25000;
+		cout << "Cuoc phi dien thoai phai tra " << c << "dong" << endl;
+	}
+	else if (a <= 200)
+	{	
+		c = b2 + 25000;
+		cout << "Cuoc phi dien thoai phai tra " << c << "dong" << endl;
+	}
+	else {
+		c = b3 + 25000;
+		cout << "Cuoc phi dien thoai phai tra " << c << "dong" << endl;
+	}
+	return 0;
+
+}
