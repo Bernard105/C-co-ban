@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	double x, y, p, s, total;
+
+	cout << "Nhap gia tri cua x :";
+	cin >> x;
+	cout << "Nhap gia tri cua y :";
+	cin >> y;
+	
+	p = x * y;
+	s = x + y;
+	total = s * s + p * (s - x) * (p + y);
+
+	cout << "p =" << p << endl;
+	cout << "s =" << s << endl;
+	cout << "total =" << total << endl;
+
+	return 0;
+
+}
