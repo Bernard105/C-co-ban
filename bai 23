@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    double doF, doC;
+	
+	cout << "Nhiet do tinh theo do F la " << "\n";
+	cin >> doF;
+
+	doC = (doF - 32) / 1.8;
+	cout << "Nhiet do tinh theo do C la " << doC << endl;
+
+  return 0;
+}
