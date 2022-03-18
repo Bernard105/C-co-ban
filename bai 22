@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int age;
+	cout << "Nhap tuoi cua hoc sinh ";
+	cin >> age;
+
+	if (age >= 15) cout << "Du dieu kien vao lop 10" << endl;
+	else cout << "Khong du dieu kien vao lop 10" << endl;
+
+	return 0;
+
+}
