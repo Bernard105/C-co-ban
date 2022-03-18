@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main(int argv, char* argc[])
+{
+	double dso, dthu;
+	
+	cout << "Nhap so tien doanh so cua cua hang " << endl;
+	cin >> dso; //đơn vị triệu
+
+	if (dso > 300) {
+		dthu = 0.2 * dso;
+		cout << "Doanh thu cua hang nhan duoc " << dthu << "trieu dong" << endl;
+	}
+	else if (dso >= 100) {
+		dthu = 0.1 * dso;
+		cout << "Doanh thu cua hang nhan duoc " << dthu << "trieu dong" << endl;
+	}
+	else {
+		dthu = 0.05 * dso;
+		cout << "Doanh thu cua hang nhan duoc " << dthu << "trieu dong" << endl;
+	}
+	return 0;
+	
+}
