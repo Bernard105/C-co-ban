@@ -1,0 +1,22 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Nhap n" << endl;
+	cin >> n;
+
+	for (int i = 1; i <= n; i++) {
+		for (int j = n; j >= i; j--) {
+			cout << setw(2) << "*";
+			//khi dung vong lap for chung ta se lay vong lap nhu thong thuong
+			//VD n=3 thi j=3 thi lay 3 gia tri cua i la 3,2,1 va in ra 3*la * * *
+			// sau do j=2 lan luot lay 2 gia tri cua i la 2,1 va in ra 2*la * *
+			// sau do j=1 thi i co 1 gia tri la 1 in ra 1* la *
+			//ket qua cua dong lenh ra tam giac yeu cau
+		}
+		cout << endl;
+	}
+}
