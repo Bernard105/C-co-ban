@@ -1,0 +1,19 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+	int start, thwart, vertical;
+	start = 1, thwart = 100, vertical = 10;
+	
+	cout << "In ra bang cuu chuong : \n" << endl;
+
+	for (int i = start; i <= thwart; i++) {
+		for (int j = start; j <= vertical; j++) {
+			cout << setw(5) << i * j;
+		}
+		cout << endl;
+	}
+	return 0;
+}
