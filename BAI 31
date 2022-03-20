@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Nhap so" << endl;
+	cin >> n;
+	cout << "\n" << endl;
+	do {
+		if (n == -1) {
+			cout << "So khong hop le. Vui long nhap so khac" << endl;
+			cin >> n;
+		}
+	} while (n == -1); {
+		if (n >= -100) {
+			for (n; n >= -100; n--) {
+				cout << n << endl;
+			}
+		}
+		else {
+			for (n; n < -100; n++) {
+				cout << n << endl;
+			}
+		}
+	}
+}
