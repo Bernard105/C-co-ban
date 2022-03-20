@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n, boi;
+	cout << "Nhap so " << endl;
+	cin >> n;
+	cout << "Boi so cua n voi cac so tu 1 den 20 la " << endl;
+	cout << "\n";
+
+	for (int i = 1; i <= 20; i++) {
+		cout << n * i << endl;
+	}
+}
