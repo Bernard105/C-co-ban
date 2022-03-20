@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n, m;
+	cout << "Nhap n \n" << endl;
+	cin >> n;
+	for (int i = 1; i <= n; i++) {
+		cout << "Nhap day so nguyen " << endl;
+		cin >> m;
+		if (m < 0)
+		{
+			break;
+		}
+	}
+}
