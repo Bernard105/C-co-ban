@@ -1,0 +1,18 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+	int i, j;
+	for (i = 1; i <= 10; i++) {
+		for (j = i; j <= 200; j += 10) {
+			cout << setw(5) << j;
+			//Moi lan vong lap xuat ra bien j thi se tao ra do dai hien thi cua 1 bien j la 5 o trong
+			//Sau do so chu so bien j se lap day 5 o.neu it hon 5 ki tu thi se tao ra khoang cach bang 5- so ki tu cua j
+		}
+		cout << endl;
+	}
+
+	return 0;
+}
