@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+string checkNum(int num)
+{
+	if (num > 10) {
+		return "lon hon 10";
+	}
+	
+	if (num < 1) {
+		return "nho hon 1";
+	}
+
+	return "nam trong khoang tu 1 den 10";
+
+}
+int main() {
+	int n;
+	cout << "Nhap so" << endl;
+	cin >> n;
+	cout << n << " " << checkNum(n) << endl;
+	return 0;
+}
