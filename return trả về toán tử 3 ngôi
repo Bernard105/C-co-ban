@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+
+int find_bigger(int a, int b) {
+	return a > b ? a : b;
+}
+int main()
+{
+	int ketqua = find_bigger(1, 2);
+	cout << "So lon hon " << ketqua;
+	return 0;
+}
