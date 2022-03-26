@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdio.h>
+#include <cstdio>
+using namespace std;
+ 
+int main() {
+  //khai báo biến str để lưu các ký tự được nhập từ bàn phím
+  char str[100];
+  //sử dụng hàm cout kết hợp với hàm gets() để yêu cầu người dùng nhập vào một chuỗi
+  cout << "Nhập vào một chuỗi: ";
+  gets(str);
+  //in ra chuỗi vừa nhập
+  cout << "Bạn vừa nhập: " << str;
+ 
+  cout<<"\n----------------------------------\n";
+  cout<<"Chương trình này được đăng tại Freetuts.net";
+}
