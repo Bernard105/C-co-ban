@@ -1,0 +1,30 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main() {
+    int ch;
+    FILE* fp;
+    //tạo một file mới tên là file.txt để ghi nội dung
+    fp = fopen("file.txt", "w");
+    //nếu có lỗi thì in ra thông báo
+    if (fp)
+    {
+        ch = getc(fp);
+        if (ferror(fp))
+        {
+            cout << "Da xay ra loi" << endl;
+            //sử dụng hàm clearerr() để chỉ ra lỗi
+            clearerr(fp);
+        }
+    }
+    //nếu không có lỗi thì thông báo cho người dùng
+    if (!ferror(fp))
+        cout << "Da dat lai loi";
+    fclose(fp);
+
+    cout << "\n----------------------------------\n";
+    cout << "Chương trình này được đăng tại Freetuts.net";
+}
