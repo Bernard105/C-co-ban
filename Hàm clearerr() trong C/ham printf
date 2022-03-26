@@ -1,0 +1,14 @@
+#include <iostream>
+#include <stdio.h>
+#include <cstdio>
+using namespace std;
+ 
+int main() {
+  //Ví dụ 1: khai báo biến x = 5, sau đó sử dụng hàm printf() để truyền giá trị x vào và hiển thị ra màn hình bằng định dạng %d
+  int x = 5;
+  printf("x = %d \n", x);
+  //Ví dụ 2: Khai báo biến my_name, sau đó truyền vào và hiển thị ra màn hình bằng định dạng %s
+  char my_name[] = "Tran Manh Tai";
+  printf("Tên của tôi là %s \n", my_name);
+
+}
