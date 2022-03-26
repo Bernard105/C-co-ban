@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+ 
+int main() {
+  int c;
+  FILE *fp;
+  //sử dụng hàm fopen tạo file để đọc
+  fp = fopen("file.txt","r");//ở đây 'file.txt' có nội dung là "Hello World!"
+  //sử dụng hàm getc để đọc file
+  if (fp)
+  {
+    while(feof(fp) == 0)
+      {
+        c = getc(fp);
+        putchar(c);
+      }
+  }
+  else
+    perror("File opening failed");
+  //sử dụng hàm fclose để đóng file  
+  fclose(fp);
+ 
+  cout<<"\n----------------------------------\n";
+  cout<<"Chương trình này được đăng tại Freetuts.net";
+}
