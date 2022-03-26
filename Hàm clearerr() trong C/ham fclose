@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+ 
+int main() {
+  FILE *fp;
+  //tạo một file mới để ghi
+  fp = fopen("file.txt","w");
+  char str[20] = "Hello World!";
+     
+  if (fp == NULL)
+      {
+      cout << "Lỗi khi mở tệp";
+      exit(1);
+      }
+  //sử dụng hàm fclose để đóng tệp
+  fprintf(fp,"%s",str);
+  fclose(fp);
+  cout << "Đóng tệp thành công!!";
+ 
+  cout<<"\n----------------------------------\n";
+  cout<<"Chương trình này được đăng tại Freetuts.net";
+}
