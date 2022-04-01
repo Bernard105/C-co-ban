@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n, k;
+	cout << "Nhap hai so tu nhien " << endl;
+	cin >> n >> k;
+	int sum = 0;
+
+		for (int i = 0; i <= n; i++) 
+		{
+			if(n>k)
+			{
+			if (i % k == 0) 
+			{
+				sum += i;
+			}
+			else 
+			{
+				continue;
+			}
+		}
+			else {
+				cout << "Hai so vua nhap khong hop le" << endl;
+				break;
+			}
+	}
+		cout << "Tong cac so tu nhien be hon " << n << " va nho hon " << k << " la " << sum << endl;
+}
