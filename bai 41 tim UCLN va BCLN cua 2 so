@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+	cout << "Nhap hai so" << endl;
+	cin >> a >> b;
+	int V = a * b;
+  
+	while (true) {
+		if (a <= 0 || b <= 0) {
+			cout << "Hai so vua nhap khong hop le" << endl;
+			cin >> a >> b;
+		}
+		else {
+			while (a != b) {
+				if (a > b) {
+					a = a - b;
+				}
+				else
+				{
+					b = b - a;
+				}
+			}
+			cout << "UCLN la " << a << endl;
+			cout << "BCNN la " << (V / a) << endl;
+			break;
+		}
+	}
+}
