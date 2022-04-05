@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Nhap so" << endl;
+	cin >> n;
+	int tmp = n;
+	int ndao = 0;
+	
+	while (n > 0) {
+		ndao = ndao * 10 + n % 10;
+		n /= 10;
+	}
+	if (tmp == ndao) {
+		cout << tmp << " la so nghich dao" << endl;
+	}
+	else {
+		cout << tmp << " khong phai la so nghich dao" << endl;
+	}
+	
+	return 0;
+}
