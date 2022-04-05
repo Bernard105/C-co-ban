@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Nhap so" << endl;
+	cin >> n;
+	int count = 0;
+	int nso = 0;
+	int sum = 0;
+	while (n) {
+		for (int i = 0; i <= n; i++)
+		{
+			count++;
+			nso = n % 10;
+			sum += nso;
+			n /= 10;
+		}
+	}
+	cout << "Tong cac chu so cua duoc cho " << " la " << sum << endl;
+}
