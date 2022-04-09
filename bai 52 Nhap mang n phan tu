@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+#define MAX 1000
+
+void inputArr(int arr[], int& n);
+void outputArr(int arr[], int n);
+
+int main()
+{
+	int myArr[MAX];
+	int nsize;
+	inputArr(myArr, nsize);
+	outputArr(myArr, nsize);
+
+	return 0;
+}
+
+void inputArr(int arr[], int& n)
+{
+	cout << "Nhap so luong phan tu n : ";
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+}
+
+void outputArr(int arr[], int n)
+{
+	for (int i = 0; i < n; i++) {
+			cout << "arr[" << i << "]=" << arr[i] << endl;
+	}
+}
