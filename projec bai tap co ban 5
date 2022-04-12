@@ -1,0 +1,26 @@
+//Source
+#include<iostream>
+#include"Header.h"
+
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Input number : ";
+	cin >> n;
+
+	int nFactorial = findfactorialofNumber(n);
+	cout << "Factorial of " << n << " is " << nFactorial << endl;
+}
+
+int findfactorialofNumber(int n)
+{
+	int nFF = 1;
+	for (size_t i = 1; i <= n; i++)
+	{
+		nFF *= i;
+	}
+	
+	return nFF;
+}
