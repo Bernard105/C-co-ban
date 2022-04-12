@@ -1,0 +1,40 @@
+//Source.cpp
+#include<iostream>
+
+using namespace std;
+
+int timUCLN(int a, int b)
+{
+	while (a != b)
+	{
+		if (a > b)
+		{
+			a -= b;
+		}
+		else {
+			b -= a;
+		}
+	}
+	return a;
+}
+
+int timBCNN(int a, int b)
+{
+	int t = timUCLN(a, b);
+	return a * b / t;
+}
+
+int main()
+{
+	int x, y;
+	cout << "Enter 2 numbers" << endl;
+	cin >> x >> y;
+
+	int UCLN = timUCLN(x, y);
+	cout << "UCLN=" << UCLN << endl;
+
+	int BCNN = timBCNN(x, y);
+	cout << "BCNN=" << BCNN << endl;
+
+	return 0;
+}
