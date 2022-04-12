@@ -1,0 +1,56 @@
+//Source.cpp
+#include<iostream>
+#include"Header.h"
+
+using namespace std;
+
+int main()
+{
+	int x, y;
+	cout << "Enter 2 numbers : " << endl;
+	cin >> x >> y;
+
+	int nUCLN = timUCLN(x, y);
+	cout << "Uoc chung lon nhat la " << nUCLN << endl;
+
+	int nBCNN = timBCNN(x, y);
+	cout << "Boi chung nho nhat la " << nBCNN << endl;
+}
+
+int timUCLN(int m, int n)
+{
+	int max = 1;
+	for (size_t i = 1; i <= m; i++)
+	{
+		if (m % i == 0 && n % i == 0)
+		{
+			if (i >= max)
+			{
+				max = i;
+			}
+		}
+		else {
+			continue;
+		}
+		return max;
+	}
+}
+
+int timBCNN(int m, int n)
+{
+	int min = m * n, j = m * n;
+	for (size_t i = 1; i <= j; i++)
+	{
+		if (i % m == 0 && i % n == 0)
+		{
+			if (i <= min)
+			{
+				min = i;
+			}
+		}
+		else {
+			continue;
+		}
+		return min;
+	}
+}
