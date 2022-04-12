@@ -1,0 +1,48 @@
+//Source.cpp
+#include<iostream>
+#include"Header.h"
+
+using namespace std;
+
+int timsoNghichDao(int);
+bool lasoDoiXung(int);
+
+int main()
+{
+	int n;
+	cout << "Input number : ";
+	cin >> n;
+
+	//Kiểm tra có phải là số đối xứng không
+	if (lasoDoiXung(n))
+	{
+		cout << "La so doi xung" << endl;
+	}
+	else {
+		cout << "Khong phai la so nghich dao" << endl;
+	}
+
+	return 0;
+}
+
+int timsoNghichDao(int n)
+{
+	int nsd = 0;
+	while (n != 0) {
+		nsd = nsd * 10 + n % 10;
+		n /= 10;
+	}
+
+	return nsd;
+}
+
+bool lasoDoiXung(int n)
+{
+	if (n == timsoNghichDao(n)) {
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
