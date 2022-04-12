@@ -1,0 +1,40 @@
+//Source.cpp
+#include<iostream>
+#include"Header.h"
+
+using namespace std;
+
+int demsochuso(int);
+int demsochusoDeQuy(int);
+
+int main()
+{
+	int n;
+	cout << "Input numbers : ";
+	cin >> n;
+
+	int nchuso = demsochusoDeQuy(n);
+	cout << n << " co " << nchuso << " chu so";
+
+  return 0;
+}
+
+int demsochuso(int n)
+{
+	int ncount = 0;
+	while (n != 0)
+	{
+		n /= 10;
+		ncount++;
+	}
+	return ncount;
+}
+
+int demsochusoDeQuy(int n)
+{
+	if (n < 10)
+	{
+		return 1;
+	}
+	return 1 + demsochusoDeQuy(n / 10);
+}
