@@ -1,0 +1,47 @@
+//Source.cpp
+#include<iostream>
+
+using namespace std;
+
+int TinhTongCacChuSoVonglapwhile(int);
+int TinhTongCacChuSoVonglapfor(int);
+
+int main()
+{
+	int n;
+	cout << "Input number : ";
+	cin >> n;
+
+	int nSum = TinhTongCacChuSoVonglapwhile(n);
+	cout << "Tong cac chu so cua so " << n << " la " << nSum << endl;
+	
+	int nSum1 = TinhTongCacChuSoVonglapfor(n);
+	cout << "Tong cac chu so cua so " << n << " la " << nSum1 << endl;
+
+	return 0;
+}
+
+int TinhTongCacChuSoVonglapwhile(int n)
+{
+	int ncs = 0, nSum = 0;
+	while (n != 0)
+	{
+		ncs = n % 10;
+		nSum += ncs;
+		n /= 10;
+	}
+
+	return nSum;
+}
+int TinhTongCacChuSoVonglapfor(int n)
+{
+	int ncs = 0, nSum1 = 0;
+	for (; n != 0; )
+	{
+		ncs = n % 10;
+		nSum1 += ncs;
+		n /= 10;
+	}
+
+	return nSum1;
+}
