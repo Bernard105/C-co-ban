@@ -1,0 +1,48 @@
+//Source
+#include<iostream>
+#include<math.h>
+#include"Header.h"
+
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Input number : ";
+	cin >> n;
+
+	if (lasoTuMan(n))
+	{
+		cout << n << " la so Tu Man" << endl;
+	}
+	else
+	{
+		cout << n << " khong phai la so Tu Man" << endl;
+	}
+	return 0;
+}
+
+int demsochuso(int n)
+{
+	int ns = 0;
+	while (n != 0)
+	{
+		n /= 10;
+		ns++;
+	}
+	return ns;
+}
+
+bool lasoTuMan(int n)
+{
+	int nsm = demsochuso(n);
+	int ncs, sum = 0;
+	int ngia = n;
+	while (ngia != 0)
+	{
+		ncs = ngia % 10;
+		sum += pow(ncs, nsm);
+		ngia /= 10;
+	}
+	return (sum == n);
+}
