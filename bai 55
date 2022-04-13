@@ -1,0 +1,28 @@
+#include<iostream>
+
+using namespace std;
+
+#define MAX 1000
+
+void xuatracacsochannhohon20(int arr[], int n);
+
+int main()
+{
+    int myArr[MAX];
+    int nSize;
+    cout << "Enter number : ";
+    cin >> nSize;
+    
+    xuatracasochanhohon20(myarr,nSize);
+    
+    return 0;
+}
+
+void xuatracacsochannhohon20(int arr[], int n)
+{
+    for(size_t i=0;i<10;i++)
+    {
+        arr[i]=2*i;
+        cout << "arr[" << i << "]=" << arr[i] << endl;
+    }
+}    
