@@ -1,0 +1,27 @@
+//Source.cpp
+#include<iostream>
+using namespace std;
+
+#define MAX 1000
+
+void xuatmang(int arr[], int n);
+
+int main()
+{
+	int myArr[MAX];
+	int nSize;
+	cout << "Enter number : ";
+	cin >> nSize;
+	
+	xuatmang(myArr, nSize);
+	
+	return 0;
+}
+
+void xuatmang(int arr[], int n)
+{
+	for (size_t i = 0; i < n; i++)
+	{
+		cout << "arr[" << i << "]=" << 0 << endl;
+	}
+}
