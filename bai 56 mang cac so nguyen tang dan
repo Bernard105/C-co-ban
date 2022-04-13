@@ -1,0 +1,42 @@
+//Header.h
+#include<iostream>
+#include<stdio.h>
+#include<cstdlib>
+#include<ctime>
+
+using namespace std;
+
+#define MAX 1000
+
+void nhapmang(int arr[], int& n);
+void xuatmang(int arr[], int n);
+
+int main()
+{
+	int myArr[MAX];
+	int nSize;
+	cout << "Enter number : ";
+	cin >> nSize;
+
+	nhapmang(myArr, nSize);
+	xuatmang(myArr, nSize);
+
+	return 0;
+}
+
+void nhapmang(int arr[], int &n)
+{
+	srand(time(NULL));
+	for (size_t i = 1; i < n; i++)
+	{
+		arr[i] = arr[i - 1] + rand() % 100;
+	}
+}
+
+void xuatmang(int arr[], int n)
+{
+	for (size_t i = 0; i < n; i++)
+	{
+		cout << "arr[" << "]=" << arr[i] << endl;
+	}
+}
