@@ -1,0 +1,54 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int tongcacchuso(int n)
+{
+	int sum = 0, ncs = 0;
+	while (n != 0)
+	{
+		ncs = n % 10;
+		sum += ncs;
+		n /= 10;
+	}
+
+	return sum;
+}
+
+void phantichthanhcacthuasonguyento(int n)
+{
+	int i = 2;
+	while (n != 1)
+	{
+		if (n % i == 0) {
+			cout << i;
+			if (n != i)
+			{
+				cout << " * ";
+			}
+			else
+			{
+				cout << endl;
+			}
+			n /= i;
+		}
+		else {
+			i++;
+		}
+	}
+}
+
+int main()
+{
+	int n;
+	cout << "Enter number : ";
+	cin >> n;
+
+	int sumcsc = tongcacchuso(n);
+	cout << "Tong cac chu so cua " << n << " la " << sumcsc << endl;
+	phantichthanhcacthuasonguyento(n);
+
+	return 0;
+  
+}
