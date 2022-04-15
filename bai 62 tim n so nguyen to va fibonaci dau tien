@@ -1,0 +1,70 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+bool kiemtrasonguyento(int n)
+{
+	if (n < 2)
+	{
+		return 0;
+	}
+
+	for (int i = 2; i <= sqrt(n); i++)
+	{
+		if (n % i == 0)
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+
+void lietkesonguyento(int n)
+{
+	for (int i = 2; i < 500; i++)
+	{
+		if (kiemtrasonguyento(i)) {
+			cout << i << " ";
+		}
+	}
+	cout << endl;
+}
+
+int fibonaci_series(int n)
+{
+	if (n == 0) {
+		return 0;
+	}
+	else if (n == 1){
+		return 1;
+	}
+	else {
+		return (fibonaci_series(n - 1) + fibonaci_series(n - 2));
+	}
+}
+
+void lietkesofibonaci(int n)
+{
+	for (int i = 1; i <= n; i++)
+	{
+		cout << fibonaci_series(i) << " ";
+	}
+	cout << endl;
+}
+
+int main()
+{
+	int m;
+	cout << "Enter number : ";
+	cin >> m;
+
+	cout << m << " so nguyen to dau tien la " << endl;
+	lietkesonguyento(m);
+
+	cout << m << " so fibonaci dau tien la " << endl;
+	lietkesofibonaci(m);
+
+	return 0;
+
+}
