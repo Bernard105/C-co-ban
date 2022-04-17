@@ -1,0 +1,34 @@
+#include<iostream>
+#include<windows.h>
+
+using namespace std;
+
+void loading()
+{
+	system ("cls");
+
+	char a = 177, b = 219;
+
+	cout << "\t\t\t\t\t\tLoanding...\n";
+	cout << "\t\t\t\t";
+	for (int i = 0; i < 26; i++)
+	{
+		cout << a;
+	}
+	cout << "\r";
+	cout << "\t\t\t\t";
+
+	for (int i = 0; i < 26; i++)
+	{
+		cout << b;
+		Sleep(100);
+	}
+	cout << endl;
+	system("pause");
+}
+
+int main()
+{
+	loading();
+	return 0;
+}
