@@ -1,0 +1,82 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+#define MAX 1000
+
+void nhapmang(int arr[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+	}
+}
+
+bool kiemtrasonguyento(int n)
+{
+	if (n < 2)
+	{
+		return 0;
+	}
+	
+
+	for (int i = 2; i <= sqrt(n); i++)
+	{
+		if (n % i == 0)
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+
+double tbccacNguyenTo(int arr[], int n)
+{
+	int sum1 = 0, scs1 = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (kiemtrasonguyento(arr[i])) {
+			sum1 += arr[i];
+			scs1++;
+		}
+	}
+	cout << endl;
+	return 1.0*sum1/scs1;
+}
+
+double tongcacsochiahetchok(int arr[], int n, int sochiahet)
+{
+	int sum2 = 0, scs2 = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (arr[i] % sochiahet == 0)
+		{
+			sum2 += arr[i];
+			scs2++;
+		}
+	}
+	cout << endl;
+	return 1.0*sum2/scs2;
+}
+
+int main()
+{
+	int ARR[MAX];
+	int nSize;
+	cout << "Enter numbers of array : ";
+	cin >> nSize;
+	nhapmang(ARR, nSize);
+
+	int k;
+	cout << "Enter number : ";
+	cin >> k;
+
+	int TBC1 = tbccacNguyenTo(ARR, nSize);
+	cout << "Trung binh cong cac so nguyen to trong mang = " << TBC1 << endl;
+
+	int TBC2 = tongcacsochiahetchok(ARR, nSize, k);
+	cout << "Tong cac so chia het k = " << TBC2 << endl;
+
+	return 0;
+}
