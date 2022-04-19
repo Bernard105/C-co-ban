@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int findsum(int n)
+{
+	int sum1 = 0, sum2 = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= i; j++)
+		{
+			sum1 += j;
+		}
+		sum2 =+ sum1;// Tại sao lại là =+. Tại vì phải gắn giá trị sum1 rồi tính tổng các sum1 ở các giá trị j khác nhau
+		             //chứ không phải là gán giá sum1 vào sum2 rồi tính tổng. vì thế sẽ bị trùng lặp do vòng i chạy ở ngoài
+		             //vòng j nên tạo ra 1 mảng 2 chiều trong giá trị của các sum thay đổi theo giá trị của i và j nên sẽ bị trùng lặp các sum
+		             //nên giá trị thu được sẽ lớn hơn giá trị cần tìm nhiều lần. do đó ta cần phải gán trước tính sau để khỏi bị trùng lặp giá trị
+	}
+	return sum2;
+}
+
+int main()
+{
+	int k;
+	cout << "Enter number : ";
+	cin >> k;
+
+	int p = findsum(k);
+	cout << "Tong can tim la " << p << endl;
+
+	return 0;
+}
