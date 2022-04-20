@@ -1,0 +1,19 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int n, k;
+	cout << "Enter number : ";
+	cin >> n >> k;
+    
+	double com = 1;
+	for (int i = k + 1; i <= n; i++)
+	{
+		com *= (1.0* i / (n - i + 1));
+	}
+	cout << "Valua = " << com << endl;
+
+	return 0;
+}
