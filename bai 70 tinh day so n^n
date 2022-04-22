@@ -1,0 +1,33 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int enTer()
+{
+	int x;
+	do
+	{
+		cin >> x;
+		if (x < 0)
+			cout << "Enter incorrect!Please try again";
+	} while (x < 0);
+	return x;
+}
+
+int result(int n)
+{
+	int a = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		a += pow(i, i);
+	}
+	return a;
+}
+
+int main()
+{
+	int n;
+	n = enTer();
+	cout << "S(n) = " << result(n) << endl;
+	return 0;
+}
