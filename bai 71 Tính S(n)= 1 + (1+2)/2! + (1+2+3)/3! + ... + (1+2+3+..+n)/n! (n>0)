@@ -1,0 +1,36 @@
+#include<iostream>
+
+using namespace std;
+
+int enTer()
+{
+	int x;
+	do
+	{
+		cin >> x;
+		if (x < 0)
+			cout << "Enter incorrect. Please try again!";
+	} while (x < 0);
+	return x;
+}
+
+double result(int n)
+{
+	double sum = 0, mul = 1, delta = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		sum += i;
+		mul *= i;
+		delta += (1.0 * sum) / mul;
+	}
+	return delta;
+}
+
+int main()
+{
+	int n;
+  cout << "Enter number : ";
+	n = enTer();
+	cout << "S(n) = " << result(n) << endl;
+	return 0;
+}
