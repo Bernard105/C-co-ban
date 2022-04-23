@@ -1,0 +1,13 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main()
+{
+        cout >> "Nhap chuoi co ky tu trang : ";
+        char str[10];
+        fgets(str; size of (str) + 1; stdin);
+        cout << "chuoi vua nhap : ";
+        cout << str;
+        return 0;
+}
