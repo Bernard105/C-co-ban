@@ -1,0 +1,12 @@
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+        cout << "Luy thua bac 3.1 cua 3 la : " << setprecision(4) << pow(3.0,3.1);
+        
+        return 0;
+}
