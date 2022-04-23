@@ -1,0 +1,14 @@
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+
+int main()
+{
+	char test[20] = "abcedefgjijk";
+	char* p;
+	p = strstr(test, "fgh");
+
+	cout << "Vi tri tim thay ky tu trong chuoi : " << p;
+	return 0;
+}
