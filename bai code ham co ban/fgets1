@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+
+int main()
+{
+	FILE* fp;
+	char buf[50];
+
+	fp = fopen("test.txt", "r");
+	fgets(buf, 30, fp);
+	puts(buf);
+	fclose(fp);
+
+	return 0;
+}
