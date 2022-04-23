@@ -1,0 +1,12 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+        cout << "Luy thua bac 3 cua 2 la : " << pow(2,3) << endl;
+        cout << "Luy thua bac 3.1 cua 3 la : " << pow(3.0,3.1) << endl;
+        cout << "Luy thua bac 3.132 cua 2.012 la : " << pow(2.012,3.132) << endl;
+        
+        return 0;
+}
