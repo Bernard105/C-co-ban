@@ -1,0 +1,26 @@
+#include<iostream>
+ 
+using namespace std;
+
+int main()
+{
+	int x = 20, y; //khai bai bien binh thuong
+	int* ip;       // bien con tro
+
+	ip = &y;
+	*ip = x;       //dia chi luu tru cua bien con tro
+	//dia chi luu tru cua bien con tro ip
+	cout << "Dia chi luu tru cua bien con tro ip : " << ip << endl;
+
+	//gia tri cua dia chi o nho cua con tro
+	cout << "Gia tri cua bien ip: " << *ip << endl;
+	
+	//gia tri cua bien x
+	cout << "Gia tri cua bien x : " << x << endl;
+
+	//gia tri cua bien y
+	cout << "Gia tri cua bien y : " << y << endl;
+	
+	return 0;
+	
+}
