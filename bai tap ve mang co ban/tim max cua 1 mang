@@ -1,0 +1,36 @@
+#include<iostream>
+#include<time.h>
+
+using namespace std;
+
+#define MAX 1000
+
+void inputArray(int arr[], int n)
+{
+	srand(time(NULL));
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() + 100;
+	}
+}
+
+void outputArray(int arr[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << "arr[" << i << "]=" << arr[i] << endl;
+	}
+}
+
+double findMax(int arr[], int n)
+{
+	double max = arr[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (arr[i] > max)
+		{
+			max = arr[i];
+		}
+	}
+	return max;
+}
