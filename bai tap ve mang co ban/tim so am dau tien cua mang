@@ -1,0 +1,49 @@
+#include<iostream>
+
+using namespace std;
+
+#define MAX 1000
+
+void inputArray(int arr[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+	}
+}
+
+void outputArray(int arr[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << "arr[" << i << "]=" << arr[i] << endl;
+	}
+}
+
+void findNegativeInteger(int arr[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		if (arr[i] < 0)
+		{
+			cout << "arr[" << i << "]=" << arr[i] << endl;
+			break;
+		}
+	}
+}
+
+int main()
+{
+	int myArr[MAX];
+	int nSize;
+	cout << "Enter number of array :";
+	cin >> nSize;
+
+	inputArray(myArr, nSize);
+	outputArray(myArr, nSize);
+	cout << "First negetavi interger is : ";
+	findNegativeInteger(myArr, nSize);
+
+	return 0;
+
+}
