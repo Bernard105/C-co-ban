@@ -1,0 +1,10 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int* ptr = NULL;
+	cout << "Gia tri cua con tro la " << ptr;
+	return 0;
+}
