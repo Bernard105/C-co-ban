@@ -1,0 +1,67 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+#include<string>
+
+using namespace std;
+
+#define MAX 1000
+
+void nhapMang(int arr[], int& n);
+void xuatMang(int arr[], int n);
+void saochepMangMotChieu(int arrDest[], int arrSource[], int n);
+
+int main()
+{
+	int myArray[MAX];
+	int nSize;
+	
+	nhapMang(myArray, nSize);
+	cout << "myArray : " << endl;
+	xuatMang(myArray, nSize);
+	
+	int myArray2[MAX];
+	
+	//sao chep mang myArray sang myArray2
+	saochepMangMotChieu(myArray2, myArray, nSize);
+
+	//xuat mang myArray2 sau khi sao chep
+	cout << "myArray2 : " << endl;
+	xuatMang(myArray2, nSize);
+
+	return 0;
+}
+
+//ham nhap mang
+void nhapMang(int arr[], int& n)
+{
+	//khoi tao so ngau nhien
+	srand(time(NULL));
+
+	cout << "Nhap so luong phan tu n : ";
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand();
+	}
+}
+
+//ham xuat mang
+void xuatMang(int arr[], int n)
+{
+	//Xuat tung phan tu cho mang tu chi so 0 den n-1
+	for (int i = 0; i < n; i++)
+	{
+		cout << "array[" << i << "]=" << arr[i] << endl;
+	}
+}
+
+//sao chep mang nguon sang mang dich
+void saochepMangMotChieu(int arrDest[], int arrSource[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		arrDest[i] = arrSource[i]; //neu sao chep dao nguoc mang thi dung cau lenh arrDest[i]=arrSourece[n-1-i];
+	}
+}
